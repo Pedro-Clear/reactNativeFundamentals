@@ -1,9 +1,7 @@
 import React from 'react'
-import { SafeAreaView, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
-import ParImpar from './components/ParImpar'
-// import Diferenciar from './components/Diferenciar'
-// import ContadorV2 from './components/contador/ContadorV2'
+import ContadorV2 from './components/contador/ContadorV2'
 // import Pai from './components/indireta/Pai'
 // import Pai from './components/direta/Pai'
 // import Contador from './components/Contador'
@@ -16,11 +14,9 @@ import ParImpar from './components/ParImpar'
 
 
 export default () => (
-    <SafeAreaView style={style.App}>
-        <ParImpar num={3} />
-        {/*
-        <Diferenciar />
+    <View style={style.App}>
         <ContadorV2 />
+        {/*
         <Pai />
         <Pai />
         <Contador inicial={100} passo={13} />
@@ -40,7 +36,7 @@ export default () => (
         <Comp1 />
         <Comp2 />
         <Primeiro /> */}
-    </SafeAreaView>
+    </View>
 )
 
 const style = StyleSheet.create({
